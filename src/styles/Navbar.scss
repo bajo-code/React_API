@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+$primary-color: #212529;
+$secondary-color: #495057;
+$primary-font: 'Rubik';
+
+
+.navbar {
+    background-color: $primary-color;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-bars {
+    margin: 0 0 0 2rem;
+    font-size: 2rem;
+    background: none;
+}
+
+.nav-menu {
+    background-color: $primary-color;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: .5s;
+}
+
+.nav-menu.active {
+    left: 0;
+    transition: .5s;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: #f8f9fa;
+    font-size: .875rem;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.nav-text a svg{
+    width: 10%;
+    height: 100%;
+}
+
+.nav-text a:hover {
+    background-color: $secondary-color;
+
+}
+
+.nav-menu-items {
+    width: 100%;
+    padding: 0;
+}
+
+.navbar-toggle {
+    background-color: $primary-font;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+span {
+    margin: 0 0 0 16px;
+}
