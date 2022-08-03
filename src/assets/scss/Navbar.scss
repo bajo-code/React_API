@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
-
-$primary-color: #212529;
-$secondary-color: #495057;
-$primary-font: 'Rubik';
-
+@import "./Variables.scss";
 
 .navbar {
     background-color: $primary-color;
     height: 80px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+
+.menu-logo {
+    margin: 0 1rem 0 0;
+    font-size: 1.1em;
+    font-weight: 700;
 }
 
 .menu-bars {
@@ -46,7 +49,7 @@ $primary-font: 'Rubik';
 
 .nav-text a {
     text-decoration: none;
-    color: #f8f9fa;
+    color: $light-color;
     font-size: .875rem;
     font-weight: bold;
     width: 100%;
@@ -80,6 +83,6 @@ $primary-font: 'Rubik';
     align-items: center;
 }
 
-span {
-    margin: 0 0 0 16px;
+.nav-menu-title {
+    margin: 0 0 0 .9rem;
 }

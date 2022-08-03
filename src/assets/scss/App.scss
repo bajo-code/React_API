@@ -1,0 +1,43 @@
+@import "./Variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik';
+}
+
+body {
+  background-color: $dark-color;
+}
+
+.inicio, .aparcamientos {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  color: $light-color;
+}
+
+.bold_text {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: $light-color;
+}
+
+.titulo_inline {
+  display: inline;
+}
+
+.light_font {
+  color: $light-color;
+}
+
+.primary_bkg {
+  background-color: $dark-color;
+}
+
+

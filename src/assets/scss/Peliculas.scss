@@ -1,0 +1,94 @@
+@import "./Variables.scss";
+
+.peliculas, .peliculasHeader {
+  background-color: $dark-color;
+  width: 100%;
+  height: 100%;
+
+    
+  .peliculaGrid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fill, 400px);
+      justify-content: center;
+  }
+
+
+  .peliculaCard {
+      list-style: none;
+      &:hover {
+        opacity: 0.8;
+        transition: 0.2s;
+      }
+    }
+
+  .card_container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+
+      .peliculaImage {
+        border-radius: 10px;
+      }
+
+      span {
+        padding: 1rem 0;
+        font-size: 1.1rem;
+        color: $light-color;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+  }
+  
+}
+
+ .peliculasTitulo {
+    padding: 2rem 0;
+    color: $light-color;
+    text-align: center;
+}
+
+.peliculasInfo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .peliculasImg_size {
+    border-radius: 10px;
+  }
+
+  .peliculasInfo_col {
+    max-width: 400px;
+    height: 80%;
+    padding: 0 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 3rem;
+
+      span {
+        color: $light-color;
+      }
+  }
+    
+}
+
+@media (max-width: 800px) {
+  .peliculasInfo_col {
+    margin-top: 2rem;
+  }
+
+}
+
+  @media (max-width: 762px) {
+    .peliculaImage {
+      width: 95%;
+      height: auto;
+    }
+
+  
+  }

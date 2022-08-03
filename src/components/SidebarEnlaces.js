@@ -1,6 +1,7 @@
 import React from 'react'
 import * as IconosAi from "react-icons/ai";
 import * as IconosTi from "react-icons/ti";
+import * as IconosBi from "react-icons/bi";
 
 export const SidebarEnlaces = [
     {
@@ -19,6 +20,12 @@ export const SidebarEnlaces = [
         title: 'El Tiempo',
         path: '/eltiempo',
         icon: <IconosTi.TiWeatherPartlySunny />,
+        cName: 'nav-text'
+    },
+    {
+        title: 'Películas',
+        path: '/peliculas',
+        icon: <IconosBi.BiCameraMovie />,
         cName: 'nav-text'
     },
 ]

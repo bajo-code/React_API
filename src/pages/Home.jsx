@@ -1,9 +1,13 @@
-import React from 'react'
 
-function Home() {
+const Inicio = () => {
+  /*
+  useEffect(()=> {
+    allAparcamientos()
+  },[])
+*/
     return (
-      <div className='inicio'>Inicioooooooo</div>
+      <div className='aparcamientos'>Inicio</div>
     )
 }
 
-export default Home
+export default Inicio
